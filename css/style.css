@@ -1,0 +1,37 @@
+:root {
+  --first-nav-color: #999;
+}
+
+/* Flex classes */
+
+.flex {
+  display: flex;
+}
+
+.flex-inverse {
+  flex-direction: column;
+  align-items: center;
+}
+
+.flex-between {
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+/* Navbar Style */
+
+.first-nav-container {
+  color: var(--first-nav-color);
+  background-color: black;
+  border: solid 1px red;
+}
+
+.first-nav-container ul {
+  border: solid 1px green;
+}
+
+.first-nav-container ul,
+.first-nav-container ul li {
+  display: inline-block
+}
