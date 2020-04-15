@@ -90,7 +90,7 @@ nav li {
 
 .grid-header-nav {
   display: grid;
-  grid-template-columns: 1fr 8fr;
+  grid-template-columns: 100px 1fr;
   border: 1px solid red;
 }
 
@@ -102,3 +102,23 @@ nav li {
   border: 1px solid blue;
 }
 
+
+
+
+@media all and (max-width: 850px) {
+  
+  .grid-header-nav {
+    display: none;
+  }
+
+  .mobile-header-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .search, .menu-btn {
+    display: inline-block;
+    text-align: center;
+    padding: 15px;
+  }
+}
