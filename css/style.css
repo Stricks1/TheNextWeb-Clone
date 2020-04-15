@@ -4,7 +4,8 @@
 
 /* Flex classes */
 
-.flex {
+.flex-inverse,
+.flex-between {
   display: flex;
 }
 
@@ -18,20 +19,28 @@
   align-items: center;
 }
 
+/* spacers */
+
+
+
+.hide {
+  display: none;
+}
 
 /* Navbar Style */
 
 .first-nav-container {
   color: var(--first-nav-color);
   background-color: black;
-  border: solid 1px red;
+  padding: 0.5em 1em;
 }
 
-.first-nav-container ul {
-  border: solid 1px green;
+.first-nav-container li {
+  display: inline-block;
+  margin-right: 1em;
 }
 
-.first-nav-container ul,
-.first-nav-container ul li {
-  display: inline-block
+.first-nav-container li.except {
+  margin-right: 0;
 }
+
