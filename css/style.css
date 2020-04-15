@@ -1,8 +1,11 @@
 :root {
   --first-nav-color: #999;
+  --first-nav-font-size: 0.8rem;
+  --second-nav-bg-color: #888;
+  --second-nav-font-size: 0.9rem;
 }
 
-/* Flex classes */
+/* flex classes */
 
 .flex-inverse,
 .flex-between {
@@ -27,20 +30,41 @@
   display: none;
 }
 
-/* Navbar Style */
+/* navbar */
 
 .first-nav-container {
   color: var(--first-nav-color);
   background-color: black;
   padding: 0.5em 1em;
-}
-
-.first-nav-container li {
-  display: inline-block;
-  margin-right: 1em;
+  font-size: var(--first-nav-font-size);
 }
 
 .first-nav-container li.except {
   margin-right: 0;
 }
+
+nav li {
+  display: inline-block;
+  margin-right: 1em;
+}
+
+.second-nav-container {
+  padding: 0.5em 1em;
+  text-transform: uppercase;
+  color: var(--second-nav-bg-color);
+  font-size: var(--second-nav-font-size)
+}
+
+.fa-rotate {
+  transform: rotate(90deg);
+}
+
+.search {
+  width: 3em;
+  height: auto;
+  text-align: center;
+  height: auto;
+  border: 1px solid lightgray;
+}
+
 
