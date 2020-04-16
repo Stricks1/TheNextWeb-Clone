@@ -87,21 +87,14 @@ nav li {
 .header-popup-container {
   padding: 0.5em 1em;
   background-color: var(--header-yellow);
+  font-size: var(--first-nav-font-size);
 }
 
 .grid-header-nav {
   display: grid;
   grid-template-columns: 1fr;
-  border: 1px solid red;
 }
 
-.header-logo {
-  border: 1px solid green;
-}
-
-.header-container {
-  border: 1px solid blue;
-}
 
 .dropdown-menu {
   position: relative;
@@ -144,7 +137,6 @@ nav li {
   .grid-header-nav {
     display: grid;
     grid-template-columns: 100px 1fr;
-    border: 1px solid red;
   }
 
   .header-logo{
@@ -180,5 +172,12 @@ nav li {
     display: inline-block;
     text-align: center;
     padding: 15px;
+  }
+}
+
+
+@media all and (max-width: 460px) {
+  .header-popup-container{
+    font-size: calc(80%*var(--first-nav-font-size))
   }
 }
