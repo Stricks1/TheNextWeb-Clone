@@ -13,7 +13,9 @@
 <body>
     <header>
         <div class="grid-header-nav">
-            <div class="header-logo">LOGO</div>
+            <div>
+                <div class="header-logo hide">LOGO</div>
+            </div>
             <div class="nav-container">
                 <nav>
                     <div class="first-nav-container flex-between">
@@ -21,7 +23,7 @@
                             <li class="add">News</li>
                             <li>TNW2020</li>
                             <li class="dropdown-menu"> Business <i class="fas fa-caret-down"></i>
-                                <ul class="hide dropdown-menu-items">
+                                <ul class="dropdown-menu-items flex-inverse">
                                     <li>INDEX</li>
                                     <li>TNW X</li>
                                 </ul>
@@ -48,8 +50,8 @@
                             <li>plugged</li>
                             <li>fundamentals</li>
                             <li>readme</li>
-                            <li>growth quaters</li>
-                            <li>neural</li>
+                            <li class="hide-1080">growth quaters</li>
+                            <li class="hide-1080">neural</li>
                         </ul>
 
                         <div class="search flex-center">
@@ -63,9 +65,13 @@
         <!-- mobile header -->
         <div class="mobile-header-container hide">
             <div class="header-logo">LOGO</div>
-            <div>
-                <i class="fas fa-search fa-rotate"></i>
-                <i class="fas fa-bars"></i>
+            <div class="flex-center">
+                <div class="icon-container flex-center">
+                    <i class="fas fa-search fa-rotate"></i>
+                </div>
+                <div class="icon-container flex-center">
+                    <i class="fas fa-bars"></i>
+                </div>
             </div>
         </div>
 
