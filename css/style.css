@@ -136,6 +136,33 @@ nav li {
   border-left: 1px solid lightgray;
 }
 
+/* hero */
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main-article {
+  flex-basis: 650px;
+  flex-grow: 1;
+  height: 200px;
+  border: 1px solid black;
+}
+
+.sub-article {
+  flex-basis: 200px;
+  flex-grow: 1;
+  height: 200px;
+  border: 1px solid red;
+  justify-content: center;
+}
+
+.highlights {
+  border: 1px solid green;
+  width: 100%;
+}
+
 @media all and (max-width: 1080px) {
   .grid-header-nav {
     display: grid;
@@ -175,6 +202,10 @@ nav li {
     display: inline-block;
     text-align: center;
     padding: 15px;
+  }
+
+  .sub-article {
+    height: 400px;
   }
 }
 
