@@ -151,15 +151,14 @@ nav li {
 .hero {
   display: flex;
   flex-wrap: wrap;
-  height: 50vh;
+  height: 5vh;
 }
 
 .main-article {
-  flex-basis: 650px;
+  flex-basis: 600px;
   flex-grow: 1;
   height: auto;
-  background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/04/Spirited-Away-796x415-796x415.jpg) no-repeat center;
-  background-size: 100% auto;
+  background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/04/Spirited-Away-796x415-796x415.jpg);
 }
 
 .main-article .top::after {
@@ -169,21 +168,28 @@ nav li {
 }
 
 .sub-article {
-  flex-basis: 200px;
+  flex-basis: 250px;
   flex-grow: 1;
   height: auto;
-  border: 1px solid red;
+  border: 1px solid red; 
   justify-content: center;
 }
 
 .sub-article .one {
   background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/Untitled-design-17-796x417.png);
-  background-size: 100% auto;
+
 }
 
 .sub-article .two {
-background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/Untitled-design-17-796x417.png);
-background-size: 100% auto;
+  background: url(https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F04%2FFeatured-TNW-Photo.png&signature=e1dd1dd83d3fe638149bd423a574e6e8);
+
+}
+
+.sub-article .one,
+.sub-article .two,
+.main-article {
+  background-position: center;
+  background-size: cover;
 }
 
 .highlights {
@@ -227,8 +233,10 @@ background-size: 100% auto;
     align-items: center;
   }
 
-  .sub-article {
-    height: 400px;
+  .main-article,
+  .sub-article .one,
+  .sub-article .two {
+    height: 200px;
   }
 }
 
