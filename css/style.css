@@ -151,7 +151,7 @@ nav li {
 .hero {
   display: flex;
   flex-wrap: wrap;
-  height: 5vh;
+  height: 70vh;
 }
 
 .main-article {
@@ -159,6 +159,7 @@ nav li {
   flex-grow: 1;
   height: auto;
   background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/04/Spirited-Away-796x415-796x415.jpg);
+  margin: 3px 7px 0 7px;
 }
 
 .main-article .top::after {
@@ -168,16 +169,16 @@ nav li {
 }
 
 .sub-article {
+  padding: 3px 7px 0 0;
   flex-basis: 250px;
   flex-grow: 1;
   height: auto;
-  border: 1px solid red; 
   justify-content: center;
 }
 
 .sub-article .one {
   background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/Untitled-design-17-796x417.png);
-
+  margin-bottom: 7px;
 }
 
 .sub-article .two {
@@ -212,6 +213,10 @@ nav li {
   .hide-1080 {
     display: none;
   }
+
+  .hero {
+    height: 60vh;
+  }
 }
 
 @media all and (max-width: 850px) {
@@ -236,8 +241,20 @@ nav li {
   .main-article,
   .sub-article .one,
   .sub-article .two {
-    height: 200px;
+    height: 30vh;
+    margin: 0;
+    padding: 0;
   }
+
+  .sub-article {
+    margin: 0;
+    padding: 0;
+  }
+
+  .hero {
+    padding: 7px;
+  }
+
 }
 
 
