@@ -29,9 +29,12 @@
   align-items: center;
 }
 
-/* spacers */
+/* general */
 
-
+a {
+  text-decoration: none;
+  color: inherit;
+}
 
 .hide {
   display: none;
@@ -178,6 +181,6 @@ nav li {
 
 @media all and (max-width: 460px) {
   .header-popup-container{
-    font-size: calc(80%*var(--first-nav-font-size))
+    font-size: calc(0.80 * var(--first-nav-font-size));
   }
 }
