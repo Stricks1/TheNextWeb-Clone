@@ -199,6 +199,15 @@ nav li {
   height: 100%;
 }
 
+.hero article {
+  height: 100%;
+}
+
+.article-container {
+  border: 1px solid black;
+  height: 100%;
+}
+
 @media all and (max-width: 1080px) {
   .grid-header-nav {
     display: grid;
