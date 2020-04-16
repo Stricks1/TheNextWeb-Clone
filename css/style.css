@@ -199,6 +199,37 @@ nav li {
   height: 100%;
 }
 
+.main-article .top {
+  margin: 0 10px;
+}
+
+.logo-article,
+.date-article,
+.main-article .bottom {
+  color: white;
+}
+
+.main-article .bottom {
+  align-self: flex-end;
+}
+
+.main-article .bottom div {
+  color: var(--first-nav-color);
+}
+
+.logo-article {
+  font-size: 11vw;
+}
+
+.date-article {
+  margin-top: 10px;
+}
+
+.main-article .bottom .article-category,
+.sub-article .bottom .article-category {
+
+}
+
 @media all and (max-width: 1080px) {
   .grid-header-nav {
     display: grid;
