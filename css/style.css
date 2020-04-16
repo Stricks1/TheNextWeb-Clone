@@ -10,7 +10,8 @@
 
 .flex-inverse,
 .flex-between,
-.flex-center {
+.flex-center,
+.flex-end {
   display: flex;
 }
 
@@ -27,6 +28,10 @@
 .flex-center {
   justify-content: center;
   align-items: center;
+}
+
+.flex-end {
+  align-items: flex-end;
 }
 
 /* Floats */
@@ -152,38 +157,32 @@ nav li {
   display: flex;
   flex-wrap: wrap;
   height: 70vh;
+  color: white;
 }
 
 .main-article {
   flex-basis: 600px;
   flex-grow: 1;
   height: auto;
-  background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/04/Spirited-Away-796x415-796x415.jpg);
+  background-image: linear-gradient(to bottom right,rgba(255, 0, 0, 0.35), rgba(0, 0, 0, 1)), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/04/Spirited-Away-796x415-796x415.jpg);
   margin: 3px 7px 0 7px;
-}
-
-.main-article .top::after {
-  content: "";
-  clear: both;
-  display: block;
 }
 
 .hero article {
   height: 100%;
 }
 
-.article-container {
-  border: solid 1px black;
+.hero-container .article-container {
   height: 100%;
   justify-content: space-between;
   padding: 1em;
 }
 
-.article-container .top {
+.hero-container .article-container .top {
   width: 100%;
 }
 
-.article-container .top .date-article {
+.hero-container .article-container .top .date-article {
   margin-left: auto;
 }
 
@@ -195,13 +194,23 @@ nav li {
   justify-content: center;
 }
 
+.details-article {
+  margin-top: 0.7em;
+  color: var(--first-nav-color);
+  font-size: 0.8em;
+}
+
+.sub-article .bottom {
+  padding: 0.5em;
+}
+
 .sub-article .one {
-  background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/Untitled-design-17-796x417.png);
+  background-image: linear-gradient(to bottom, rgba(199, 199, 199, 0.25), rgba(0, 0, 0, 0.75)), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/Untitled-design-17-796x417.png);
   margin-bottom: 7px;
 }
 
 .sub-article .two {
-  background: url(https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F04%2FFeatured-TNW-Photo.png&signature=e1dd1dd83d3fe638149bd423a574e6e8);
+  background-image: linear-gradient(to bottom, rgba(199, 199, 199, 0.25), rgba(0, 0, 0, 0.75)), url(https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F04%2FFeatured-TNW-Photo.png&signature=e1dd1dd83d3fe638149bd423a574e6e8);
 
 }
 
@@ -216,6 +225,10 @@ nav li {
   background-color: green;
   width: 100%;
   height: 100%;
+}
+
+.hero .article-category{
+  padding-bottom: 0.5em;
 }
 
 @media all and (max-width: 1080px) {
@@ -235,6 +248,10 @@ nav li {
 
   .hero {
     height: 60vh;
+  }
+
+  .main-article {
+    background-image: linear-gradient(to bottom, rgba(199, 199, 199, 0.25), rgba(0, 0, 0, 0.75)), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/04/Spirited-Away-796x415-796x415.jpg);
   }
 }
 
