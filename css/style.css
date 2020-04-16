@@ -168,6 +168,33 @@ nav li {
   display: block;
 }
 
+.hero article {
+  height: 100%;
+}
+
+.article-container {
+  border: solid 1px black;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.article-container .top {
+  width: 100%;
+  border: solid 1px yellow;
+}
+
+.article-container .bottom {
+  border: solid 1px red;
+}
+
+.article-container .top .logo-article {
+  border: solid 1px green;
+}
+
+.article-container .top .date-article {
+  border: solid 1px red;
+}
+
 .sub-article {
   padding: 3px 7px 0 0;
   flex-basis: 250px;
