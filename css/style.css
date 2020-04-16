@@ -172,18 +172,18 @@ nav li {
   height: 100%;
 }
 
-.article-container {
+.hero .article-container {
   border: solid 1px black;
   height: 100%;
   justify-content: space-between;
   padding: 1em;
 }
 
-.article-container .top {
+.hero .article-container .top {
   width: 100%;
 }
 
-.article-container .top .date-article {
+.hero .article-container .top .date-article {
   margin-left: auto;
 }
 
