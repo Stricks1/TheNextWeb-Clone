@@ -304,14 +304,21 @@ nav li {
   padding-bottom: 10px;
 }
 
+.latest-news .bottom {
+  margin-top: 0.3em;
+}
+
 .latest-news .bottom i {
   font-size: 2px;
   vertical-align: middle;
 }
 
+.latest-news .bottom .sub-heading {
+  font-size: 1.1rem;
+}
 .latest-news .bottom .author-date {
   color: var(--first-nav-color);
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   margin-top: 0.5em;
 }
 
@@ -415,6 +422,8 @@ nav li {
 .latest-funding-header-container,
 .latest-news-container .heading {
   color: var(--orange-title);
+  margin-top: 4em;
+  margin-bottom: 1em;
 }
 
 .funds-list li {
@@ -468,10 +477,6 @@ nav li {
     align-items: flex-start;
   }
 
-  .latest-funding-container{
-    margin-top: 1em;
-  }
-
   .funds-list {
     display: flex;
     flex-direction: row-reverse;
@@ -503,6 +508,14 @@ nav li {
   .funding-container,
   .latest-news article {
     flex-basis: 33.3333%;
+  }
+
+  .latest-news .bottom .sub-heading{
+    font-size: 1rem;
+  }
+
+  .latest-news .bottom .author-date {
+    font-size: 0.8rem;
   }
 }
 
@@ -585,18 +598,18 @@ nav li {
   }
 
   .latest-news .bottom {
+    margin-top: 0;
     margin-left: 85px;
   }
 
   .latest-news .bottom .sub-heading{
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 
   .latest-news .bottom .author-date {
     font-size: 0.7rem;
   }
 }
-
 
 @media all and (max-width: 460px) {
   .header-popup-container{
