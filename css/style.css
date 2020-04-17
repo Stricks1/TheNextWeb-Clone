@@ -279,6 +279,31 @@ nav li {
   padding: 0 20px;
 }
 
+.latest-news .heading {
+  align-self: flex-start;
+}
+
+.latest-news-grid {
+  flex-wrap: wrap;
+}
+
+.latest-news article {
+  flex-basis: 25%;
+  padding: 5px;
+}
+
+.latest-news .img-container,
+.latest-news img {
+  width: 100%;
+}
+
+.latest-news .img-container {
+}
+
+.latest-news img {
+  height: 160px;
+}
+
 @media all and (max-width: 1080px) {
   .grid-header-nav {
     display: grid;
