@@ -456,6 +456,19 @@ nav li {
   height: 60px;
 }
 
+/* latest deals unique styles */
+
+.latest-deals .price del {
+  font-size: 0.73rem;
+  color: var(--second-nav-bg-color);
+  opacity: 0.7;
+}
+
+.latest-deals .price {
+  color: grey;
+  margin-top: 0.5em;
+}
+
 @media all and (max-width: 1080px) {
   .grid-header-nav {
     display: grid;
