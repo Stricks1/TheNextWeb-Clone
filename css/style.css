@@ -284,27 +284,32 @@ nav li {
 }
 */
 
-.latest-news-container {
+.latest-news-container,
+.latest-deals-container {
   margin: auto;
   max-width: 1280px;
   padding: 0 20px;
 }
 
-.latest-news .heading {
+.latest-news .heading,
+.latest-deals .heading {
   align-self: flex-start;
 }
 
-.latest-news-grid {
+.latest-news-grid,
+.latest-deals-grid {
   flex-wrap: wrap;
 }
 
-.latest-news article {
+.latest-news article,
+.latest-deals article {
   flex-basis: 25%;
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
-.latest-news .bottom {
+.latest-news .bottom,
+.latest-deals .bottom {
   margin-top: 0.3em;
 }
 
