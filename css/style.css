@@ -232,19 +232,6 @@ nav li {
 }
 
 /* latest-news */
-.latest-news-container {
-  width: 90%;
-  max-width: 95%;
-}
-
-.latest-news-grid {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.latest-news-container article > * {
-  display: none;
-}
 
 
 @media all and (max-width: 1080px) {
