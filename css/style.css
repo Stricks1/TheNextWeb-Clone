@@ -4,6 +4,7 @@
   --second-nav-bg-color: #888;
   --second-nav-font-size: 0.9rem;
   --header-yellow: #fd3;
+  --orange-title: #f42;
 }
 
 /* flex classes */
@@ -304,6 +305,125 @@ nav li {
   height: 160px;
 }
 
+
+/* Funding style */
+
+.latest-funding-container,
+.categories-container {
+  margin: auto;
+  max-width: 1280px;
+  padding: 0 20px;
+}
+
+.latest-funding-header-container,
+.funds-container {
+  width: 100%;
+}
+
+.funds-container {
+  margin-bottom: 2rem;
+}
+
+.funding-header-item {
+  width: 100%;
+  align-items: flex-start;
+  background-color: #ffebe8;
+}
+
+.funding-header-item h4 {
+  color: white;
+  width: 100%;
+  padding: 0.5em 0;
+  background-color: var(--orange-title);
+}
+
+.funding-stage {
+  align-items: flex-start;
+  padding: 0.5em 0;
+}
+
+.funding-stage span:first-child {
+  font-weight: bold;
+  color: black;
+  font-size: 1.2em;
+  padding-bottom: 0.2em;
+}
+
+.funding-stage span:last-child {
+  font-size: 0.8em;
+  color: #807674;
+}
+
+.funding-container {
+  flex-basis: 25%;
+  margin: 0 14px;
+  align-self: stretch;
+  background-color: #fffaf8;
+  align-items: flex-start;
+  color: #585858;
+}
+
+.funding-container i {
+  color: black;
+}
+
+.funding-information {
+  padding: 1em;
+  line-height: 2em;
+  font-size: 0.8em;
+}
+
+.funding-information span {
+  margin-left: 0.2em;
+}
+
+.funding-information {
+  border-bottom: 1px solid #ffccc3;
+}
+
+.funding-status {
+  padding: 1em;
+  font-size: 0.7em;
+}
+
+.funding-status span:last-child{
+  color: var(--first-nav-color);
+}
+
+.funding-container:first-child {
+  margin-left: 0;
+}
+
+.funding-container:last-child {
+  margin-right: 0;
+}
+
+.latest-funding-header-container {
+  color: var(--orange-title);
+}
+
+.funds-list li {
+  display: inline-block;
+  margin: 1em 0;
+}
+
+.funds-list :nth-child(1)::after,
+.funds-list :nth-child(2)::after {
+  content: "|";
+  margin: 0 5px;
+  display: inline-block;
+}
+
+.img-container {
+  float: left;
+  margin: 0.5em;
+}
+
+.img-container img {
+  width: 60px;
+  height: 60px;
+}
+
 @media all and (max-width: 1080px) {
   .grid-header-nav {
     display: grid;
@@ -325,6 +445,48 @@ nav li {
 
   .main-article {
     background-image: linear-gradient(to bottom, rgba(199, 199, 199, 0.25), rgba(0, 0, 0, 0.75)), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/04/Spirited-Away-796x415-796x415.jpg);
+  }
+
+  .latest-funding-header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .latest-funding-container{
+    margin-top: 1em;
+  }
+
+  .funds-list {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .funding-container:last-child {
+    margin-left: 0;
+  }
+  
+  .funding-container:first-child {
+    margin-right: 0;
+  }
+
+  .funds-list :nth-child(1)::after {
+    content: "";
+  }
+
+  .funds-list :nth-child(2)::after,
+  .funds-list :nth-child(3)::after {
+    content: "|";
+    margin: 0 5px;
+    display: inline-block;
+  }
+
+  .funds-container .funding-container:last-child {
+    display: none;
+  }
+
+  .funding-container {
+    flex-basis: 33.3333%;
   }
 }
 
@@ -366,6 +528,32 @@ nav li {
 
   .hero {
     padding: 7px;
+  }
+
+  .funds-list {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 1em 0;
+  }
+
+  .funds-list li {
+    margin: 1em 0 0 0;
+  }
+
+  .funds-list li:last-child {
+    margin: 0;
+  }
+
+  .funds-list :nth-child(1n)::after {
+    content: "";
+  }
+
+  .funds-container {
+    flex-direction: column;
+  }
+
+  .funding-container {
+    margin: 1em 0;
   }
 }
 
