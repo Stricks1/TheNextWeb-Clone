@@ -343,7 +343,7 @@ nav li {
 
 .latest-deals .img-container {
   position: relative;
-  overflow: hidden;
+  /*overflow: hidden*/;
 }
 
 .latest-deals .deal {
@@ -387,26 +387,38 @@ nav li {
 }
 */
 
-.latest-deals .bundle {
-  width: 70%;
+.latest-deals .bundle-wrapper {
+  /*
+  width: 40%;
   height: 45%;
   position: absolute;
-  font-size: 0.4em;
   background: #03cffc;
   color: white;
   transform: rotate(45deg);
-  top: 70%;
-  right: 60%;
-  padding-left: 32%;
+  bottom: 0;
+  left: -10%;
   display: flex;
   align-items: flex-end;
-  padding-bottom: 3%;
+  */
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  border: 2em solid;
+  border-bottom-color: #03cffc;
+  border-top-color: transparent;
+  border-left-color: #03cffc;
+  border-right-color: transparent;
+  bottom: 0;
+  left: 0;
 }
 
 
-.latest-deals .bundle-wrapper {
-  transform: rotate(315deg);
-  padding-bottom: 22.5%;
+.latest-deals .bundle {
+  color: white;
+  position: absolute;
+  font-size: 0.5em;
+  bottom: 4%;
+  left: 1%;
 }
 
 .latest-deals .bundle .amount {
