@@ -336,80 +336,65 @@ nav li {
   width: 100%;
 }
 
-.latest-news img,
-.latest-deals img {
+.latest-news img {
   height: auto;
+}
+
+.latest-deals img {
+  height: 12em;
+  object-fit: cover;
 }
 
 .latest-deals .img-container {
   position: relative;
-  /*overflow: hidden*/;
+}
+
+.latest-deals .deal-wrapper {
+  width: 0px;
+  height: 0px;
+  border: 2.2em solid;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-bottom-color: transparent;
+  border-top-color: var(--header-yellow);
+  border-left-color: transparent;
+  border-right-color: var(--header-yellow);
 }
 
 .latest-deals .deal {
-  background: var(--header-yellow);
-  width: 70%; 
-  height: 40%;
+  position: absolute;
+  top: 14%;
+  right: 2%;
   font-size: 0.60em;
   font-weight: bold;
-  position: absolute;
   transform: rotate(45deg);
-  bottom: 70%;
-  left: 60%;
-  display: flex;
-  align-items: flex-end;
-  padding-bottom: 2%;
 }
-
-.latest-deals .deal span {
-  display: block;
-  width: 50%;
-  margin: 0 auto;
-  text-align: center;
-}
-
-
-.latest-deals .bundle span {
-  display: block;
-}
-
-/*
-.latest-deals .bundle {
-  width: 70%;
-  position: absolute;
-  font-size: 0.45rem;
-  background: #03cffc;
-  color: white;
-  bottom: 0;
-  transform: rotate(0deg);
-  padding-top: 10%;
-  padding-left: 1.5%;
-}
-*/
 
 .latest-deals .bundle-wrapper {
-  /*
-  width: 40%;
-  height: 45%;
-  position: absolute;
-  background: #03cffc;
-  color: white;
-  transform: rotate(45deg);
-  bottom: 0;
-  left: -10%;
-  display: flex;
-  align-items: flex-end;
-  */
   position: absolute;
   width: 0px;
   height: 0px;
-  border: 2em solid;
+  border: 2.1em solid;
   border-bottom-color: #03cffc;
   border-top-color: transparent;
   border-left-color: #03cffc;
   border-right-color: transparent;
-  bottom: 0;
+  bottom: 2.5px;
   left: 0;
+  z-index: 2;
+}
+
+.latest-deals .bundle-white {
+  position: absolute;
+  border: 2.24em solid;
+  border-bottom-color: white;
+  border-top-color: transparent;
+  border-left-color: white;
+  border-right-color: transparent;
+  bottom:0;
+  left: 0;
+  z-index: 1;
 }
 
 
@@ -419,6 +404,11 @@ nav li {
   font-size: 0.5em;
   bottom: 4%;
   left: 1%;
+  z-index: 2;
+}
+
+.latest-deals .bundle span {
+  display: block;
 }
 
 .latest-deals .bundle .amount {
@@ -546,10 +536,13 @@ nav li {
   font-size: 0.73rem;
   color: var(--second-nav-bg-color);
   opacity: 0.7;
+  display: inline-block;
+  margin-right: 5px;
 }
 
 .latest-deals .price {
   color: grey;
+  font-size: 0.9rem;
   margin-top: 0.5em;
 }
 
@@ -628,7 +621,12 @@ nav li {
 
 @media all and (max-width: 850px) {
   
-  .grid-header-nav {
+  .grid-header-nav, 
+  .deal-wrapper,
+  .deal,
+  .bundle-wrapper,
+  .bundle-white,
+  .bundle {
     display: none;
   }
 
@@ -703,6 +701,7 @@ nav li {
   .latest-deals img {
     height: 75px;
     width: 75px;
+    object-fit: cover;
     float: left;
   }
 
