@@ -363,7 +363,7 @@ nav li {
 
 .latest-deals .deal span {
   display: block;
-  width: 45%;
+  width: 50%;
   margin: 0 auto;
   text-align: center;
 }
@@ -583,12 +583,6 @@ nav li {
 
   .latest-news .bottom .author-date {
     font-size: 0.8rem;
-  }
-
-  .latest-deals .deal {
-    padding: 40px 30px 5px 105px;
-    top: -37px;
-    left: 110px;
   }
 }
 
