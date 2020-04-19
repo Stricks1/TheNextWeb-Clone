@@ -368,23 +368,27 @@ nav li {
   text-align: center;
 }
 
-/*
+
 .latest-deals .bundle span {
   display: block;
 }
 
 .latest-deals .bundle {
-  padding: 40px 30px 5px 58px;
-  width: 100%;
+  width: 70%;
   position: absolute;
-  left: -10px;
-  top: 5px;
-  font-size: 0.5rem;
+  font-size: 0.45rem;
   background: #03cffc;
   color: white;
-  transform: rotate(45deg);
+  bottom: 0;
+  transform: rotate(0deg);
+  padding-top: 10%;
+  padding-left: 1.5%;
 }
-*/
+
+.latest-deals .bundle .amount {
+  font-size: 1rem;
+  font-weight: bold;
+}
 
 /* Funding style */
 
