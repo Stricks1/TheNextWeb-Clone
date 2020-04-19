@@ -575,6 +575,12 @@ nav li {
   .latest-news .bottom .author-date {
     font-size: 0.8rem;
   }
+
+  .latest-deals .deal {
+    padding: 40px 30px 5px 105px;
+    top: -37px;
+    left: 110px;
+  }
 }
 
 @media all and (max-width: 850px) {
