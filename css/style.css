@@ -350,7 +350,7 @@ nav li {
   background: var(--header-yellow);
   padding: 40px 30px 5px 58px;
   width: 100%; 
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   font-weight: bold;
   text-align: center;
   position: absolute;
@@ -359,6 +359,23 @@ nav li {
   left: 110px;
 }
 
+/*
+.latest-deals .bundle span {
+  display: block;
+}
+
+.latest-deals .bundle {
+  padding: 40px 30px 5px 58px;
+  width: 100%;
+  position: absolute;
+  left: -10px;
+  top: 5px;
+  font-size: 0.5rem;
+  background: #03cffc;
+  color: white;
+  transform: rotate(45deg);
+}
+*/
 
 /* Funding style */
 
