@@ -664,6 +664,11 @@ footer div {
     background: linear-gradient(to bottom right,#c09,#f42 85%);
   }
 
+  .header-logo img {
+    width: 66px;
+    height: 16px;
+  }
+
   .hide-1080 {
     display: none;
   }
