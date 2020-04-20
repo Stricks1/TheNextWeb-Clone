@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Saira:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,400&display=swap');
 
 :root {
   --first-nav-color: #999;
@@ -12,6 +13,10 @@
   --header-yellow: #fd3;
   --orange-title: #f42;
   --title-font-family: 'Saira', sans-serif;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
 }
 
 /* flex classes */
@@ -181,6 +186,20 @@ nav li {
   flex-wrap: wrap;
   height: 70vh;
   color: white;
+}
+
+.hero h2 {
+  font-family: var(--title-font-family);
+}
+
+.hero .main-article h2 {
+  font-size: 3rem;
+  line-height: 3.2rem;
+}
+
+.hero .sub-article h2 {
+  font-size: 1.8rem;
+  line-height: 2.2rem;
 }
 
 .main-article {
@@ -713,6 +732,7 @@ footer div {
 
   .hero {
     height: 60vh;
+    border: 1px solid red;
   }
 
   .main-article {
@@ -790,6 +810,19 @@ footer div {
   .bundle-white,
   .bundle {
     display: none;
+  }
+
+  .magic-logo {
+  display: none;
+  }
+
+  .hero h2 {
+    font-size: 2rem !important;
+    line-height: 2.2rem !important;
+  }
+
+  .hero .main-article .bottom {
+    padding-top: 5em;
   }
 
   .mobile-header-container {
