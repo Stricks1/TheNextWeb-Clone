@@ -514,14 +514,18 @@ nav li {
   color: var(--first-nav-color);
 }
 
-.latest-funding-header-container,
+.latest-funding-header-container .heading,
 .latest-news-container .heading,
 .latest-deals-container .heading,
 .categories-container .heading {
   color: var(--orange-title);
+  font-family: var(--title-font-family);
+  font-size: 1.5rem;
+  font-weight: bold;
   margin-top: 4em;
   margin-bottom: 1em;
 }
+
 
 .funds-list li {
   display: inline-block;
@@ -726,6 +730,11 @@ footer div {
     height: 16px;
   }
 
+  .hero .sub-article h2 {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+  }
+
   .hide-1080 {
     display: none;
   }
@@ -812,16 +821,16 @@ footer div {
   }
 
   .magic-logo {
-  display: none;
+    height: 0;
   }
 
   .hero h2 {
-    font-size: 2rem !important;
-    line-height: 2.2rem !important;
+    font-size: 1.4rem !important;
+    line-height: 1.6rem !important;
   }
 
-  .hero .main-article .bottom {
-    padding-top: 5em;
+  .hero-container .article-container {
+    padding: 0.5em;
   }
 
   .mobile-header-container {
