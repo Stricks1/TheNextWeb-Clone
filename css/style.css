@@ -362,6 +362,12 @@ nav li {
   color: black;
 }
 
+.social-media span i {
+  width: 16px;
+  height: 16px;
+  color: white;
+}
+
 .latest-news .bottom i {
   font-size: 2px;
   vertical-align: middle;
@@ -453,6 +459,16 @@ nav li {
   bottom: 4%;
   left: 1%;
   z-index: 2;
+}
+
+.social-media span {
+  margin: 0 8px;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 50%;
+  border: 2px solid #333;
+  background-color: #333;
 }
 
 .latest-deals .bundle span {
@@ -696,24 +712,8 @@ footer div {
   margin-bottom: 1.5em;
 }
 
-.social-media span {
-  margin: 0 8px;
-  width: 40px;
-  height: 40px;
-  padding: 10px;
-  border-radius: 50%;
-  border: 2px solid #333;
-  background-color: #333;
-}
-
 .social-media span:hover {
   background-color: #191919;
-}
-
-.social-media span i {
-  width: 16px;
-  height: 16px;
-  color: white;
 }
 
 @media all and (max-width: 1080px) {
@@ -722,11 +722,11 @@ footer div {
     grid-template-columns: 100px 1fr;
   }
 
-  .header-logo{
+  .header-logo {
     display: flex;
     height: 100%;
     width: 100px;
-    background: linear-gradient(to bottom right,#c09,#f42 85%);
+    background: linear-gradient(to bottom right, #c09, #f42 85%);
   }
 
   .header-logo img {
@@ -763,14 +763,20 @@ footer div {
     align-self: flex-start;
   }
 
-  .latest-funding-header-container  .heading{
+  .latest-funding-header-container .heading {
     margin-bottom: 0;
+  }
+
+  .funding-container,
+  .latest-news article,
+  .latest-deals article {
+    flex-basis: 33.3333%;
   }
 
   .funding-container:last-child {
     margin-left: 0;
   }
-  
+
   .funding-container:first-child {
     margin-right: 0;
   }
@@ -788,12 +794,6 @@ footer div {
 
   .funds-container .funding-container:last-child {
     display: none;
-  }
-
-  .funding-container,
-  .latest-news article,
-  .latest-deals article {
-    flex-basis: 33.3333%;
   }
 
   .latest-news .bottom .sub-heading,
@@ -819,8 +819,7 @@ footer div {
 }
 
 @media all and (max-width: 850px) {
-  
-  .grid-header-nav, 
+  .grid-header-nav,
   .deal-wrapper,
   .deal,
   .bundle-wrapper,
@@ -868,7 +867,7 @@ footer div {
     padding: 0;
   }
 
-  .sub-article .one{
+  .sub-article .one {
     margin: 7px 0;
   }
 
@@ -948,9 +947,10 @@ footer div {
 }
 
 @media all and (max-width: 460px) {
-  .header-popup-container{
-    font-size: calc(0.80 * var(--first-nav-font-size));
+  .header-popup-container {
+    font-size: calc(0.8 * var(--first-nav-font-size));
   }
+
   .hero {
     margin-top: 69px;
   }
