@@ -1,13 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Saira:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 :root {
   --first-nav-color: #999;
   --first-nav-font-size: 0.8rem;
+  --first-nav-font-family: 'Noto Sans', sans-serif;
   --second-nav-bg-color: #888;
   --second-nav-font-size: 0.9rem;
   --second-nav-font-family: 'Oswald', sans-serif;;
   --header-yellow: #fd3;
   --orange-title: #f42;
+  --title-font-family: 'Saira', sans-serif;
 }
 
 /* flex classes */
@@ -78,6 +82,7 @@ a {
   background-color: black;
   padding: 0.5em 1em;
   font-size: var(--first-nav-font-size);
+  font-family: var(--first-nav-font-family);
 }
 
 .first-nav-container li.except {
@@ -99,6 +104,7 @@ nav li {
   text-transform: uppercase;
   color: var(--second-nav-bg-color);
   font-size: var(--second-nav-font-size);
+  font-family: var(--second-nav-font-family);
   height: 45px;
 }
 
@@ -122,6 +128,7 @@ nav li {
   padding: 0.5em 1em;
   background-color: var(--header-yellow);
   font-size: var(--first-nav-font-size);
+  font-family: var(--first-nav-font-family);
 }
 
 .grid-header-nav {
@@ -192,6 +199,7 @@ nav li {
   height: 100%;
   justify-content: space-between;
   padding: 1em;
+  align-items: flex-start;
 }
 
 .hero-container .article-container .top {
@@ -217,7 +225,6 @@ nav li {
 .magic-logo {
   align-items: flex-start;
 }
-
 
 .sub-article {
   padding: 3px 7px 0 0;
@@ -262,6 +269,13 @@ nav li {
 
 .hero .article-category{
   padding-bottom: 0.5em;
+  letter-spacing: 0.1rem;
+}
+
+.article-category{
+  font-family: var(--second-nav-font-family);
+  font-weight: 400;
+  font-size: 0.8rem;
 }
 
 .latest-news-container,
@@ -439,6 +453,8 @@ nav li {
 }
 
 .funding-stage span:last-child {
+  font-family: var(--second-nav-font-family);
+  letter-spacing: 0.1rem;
   font-size: 0.8rem;
   color: #807674;
 }
@@ -577,6 +593,7 @@ nav li {
   display: block;
   padding: 1em 0.5em 0.3em;
   font-size: 0.8rem;
+  font-family: var(--second-nav-font-family);
 }
 
 .category-container .latest-highlight h3 {
@@ -620,6 +637,7 @@ footer div {
 .social-media,
 .footer-menu {
   flex-wrap: wrap;
+  font-family: var(--second-nav-font-family);
 }
 
 .footer-menu li {
