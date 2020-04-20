@@ -312,6 +312,7 @@ nav li {
 .latest-news-grid,
 .latest-deals-grid {
   flex-wrap: wrap;
+  align-self: flex-start;
 }
 
 .latest-news article,
@@ -335,6 +336,7 @@ nav li {
 .latest-deals .bottom .sub-heading {
   font-size: 1.1rem;
 }
+
 .latest-news .bottom .author-date {
   color: var(--first-nav-color);
   font-size: 0.9rem;
@@ -526,6 +528,11 @@ nav li {
   margin-bottom: 1em;
 }
 
+.funds-list {
+  color: var(--orange-title);
+  align-self: flex-end;
+  margin-bottom: 0.5em;
+}
 
 .funds-list li {
   display: inline-block;
@@ -756,6 +763,11 @@ footer div {
   .funds-list {
     display: flex;
     flex-direction: row-reverse;
+    align-self: flex-start;
+  }
+
+  .latest-funding-header-container  .heading{
+    margin-bottom: 0;
   }
 
   .funding-container:last-child {
