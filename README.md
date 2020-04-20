@@ -5,43 +5,29 @@ This project consists of replicating the The Next Web website putting emphasis o
 ![screenshot](./img/Readme/fullscreen.jpg)
 
 # Mobile
-![screenshot](./img/Readme/mobileV.jpg)
+![screenshot](./img/Readme/mobileV.png)
 
-# Built With
+## Built With
+
     HTML,
     CSS
 
-Live Demo
+## Live Demo
 
-Live Demo Link
-Authors
+[Live Demo Link](https://rawcdn.githack.com/Stricks1/TheNextWeb-Clone/81163d6aa654bb645f707f6c8817e39134c580d9/index.html)
 
-bust_in_silhouette Author1
+## Authors
 
-    Github: @githubhandle
-    Twitter: @twitterhandle
-    Linkedin: linkedin
-
-bust_in_silhouette Author2
+👤 **Author1**
 
     Github: @githubhandle
     Twitter: @twitterhandle
     Linkedin: linkedin
 
-handshake Contributing
+👤 **Author2**
 
-Contributions, issues and feature requests are welcome!
+    Github: @githubhandle
+    Twitter: @twitterhandle
+    Linkedin: linkedin
 
-Feel free to check the issues page.
-Show your support
-
-Give a star if you like this project!
-Acknowledgments
-
-    Hat tip to anyone whose code was used
-    Inspiration
-    etc
-
-memo License
-
-This project is MIT licensed.
+##
