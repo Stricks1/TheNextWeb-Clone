@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap');
+
 :root {
   --first-nav-color: #999;
   --first-nav-font-size: 0.8rem;
   --second-nav-bg-color: #888;
   --second-nav-font-size: 0.9rem;
+  --second-nav-font-family: 'Oswald', sans-serif;;
   --header-yellow: #fd3;
   --orange-title: #f42;
 }
