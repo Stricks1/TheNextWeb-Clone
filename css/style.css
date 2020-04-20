@@ -63,7 +63,8 @@ a {
 
 .pd-14,
 .latest-news article,
-.latest-deals article {
+.latest-deals article,
+.categories-container .category-container {
   padding: 0 14px;
 }
 
@@ -242,48 +243,6 @@ nav li {
 .hero .article-category{
   padding-bottom: 0.5em;
 }
-
-/* latest-news */
-/*
-.latest-news {
-  display: flex;
-  justify-content: center;
-}
-
-.latest-news-container {
-  max-width: 1300px;
-  width: 1220px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.latest-news .heading,
-.latest-news-grid {
-  flex-basis: 100%;
-  margin-top: 1em;
-  border: 1px solid green;
-}
-
-.latest-news-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-
-.latest-news-grid article {
-  width: 290px;
-  height: 200px;
-  border: 1px solid yellow;
-  display: flex;
-  flex-direction: column;
-}
-
-.latest-news .img-container {
-  display: none;
-}
-*/
 
 .latest-news-container,
 .latest-deals-container {
@@ -502,7 +461,8 @@ nav li {
 
 .latest-funding-header-container,
 .latest-news-container .heading,
-.latest-deals-container .heading {
+.latest-deals-container .heading,
+.categories-container .heading {
   color: var(--orange-title);
   margin-top: 4em;
   margin-bottom: 1em;
@@ -544,6 +504,151 @@ nav li {
   color: grey;
   font-size: 0.9rem;
   margin-top: 0.5em;
+}
+
+/* Category Style */
+
+.categories-container {
+  flex-wrap: wrap;
+}
+
+.category-container .latest-highlight img {
+  width: 96px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.category-container {
+  flex-basis: 33.3333%;
+}
+
+.category-highlight {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(199, 199, 199, 0.25),
+      rgba(0, 0, 0, 0.75)
+    ),
+    url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/04/Google-Meet-796x417.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 20vw;
+}
+
+.category-highlight .bottom {
+  color: white;
+  padding: 0.5em;
+}
+
+.category-container .latest-highlight {
+  background-color: #fff4f2;
+  height: 96px;
+  position: relative;
+}
+
+.category-container .latest-highlight .text-container {
+  margin-top: 2px;
+  padding-right: 98px;
+  color: var(--orange-title);
+}
+
+.category-container .latest-highlight span {
+  display: block;
+  padding: 1em 0.5em 0.3em;
+  font-size: 0.8rem;
+}
+
+.category-container .latest-highlight h3 {
+  padding-left: 0.5em;
+  line-height: 1.1rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.list-categ-article li {
+  padding: 0.5em 0 0.5em 1em;
+  font-size: 0.9rem;
+  color: #575757;
+  border-bottom: 1px solid #eee;
+}
+
+.list-categ-article li::before {
+  content: "\2022";
+  color: var(--orange-title);
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+/* Footer style */
+
+footer {
+  color: #878787;
+}
+
+footer div {
+  text-align: center;
+}
+
+.footer-links {
+  background-color: #131313;
+  padding: 3em 0 2em;
+}
+
+.social-media,
+.footer-menu {
+  flex-wrap: wrap;
+}
+
+.footer-menu li {
+  margin: 6px;
+  font-size: 0.8rem;
+}
+
+.copyright {
+  padding: 3em;
+  background-color: black;
+  font-size: 0.8rem;
+}
+
+.tnw-footer-logo {
+  width: 38px;
+  height: 9px;
+}
+
+.stack-footer-logo{
+  width: 66px;
+  height: 9px;
+}
+
+.red {
+  color: red;
+}
+
+.social-media {
+  margin-bottom: 1.5em;
+}
+
+.social-media span {
+  margin: 0 8px;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 50%;
+  border: 2px solid #333;
+  background-color: #333;
+}
+
+.social-media span:hover {
+  background-color: #191919;
+}
+
+.social-media span i {
+  width: 16px;
+  height: 16px;
+  color: white;
 }
 
 @media all and (max-width: 1080px) {
@@ -616,6 +721,14 @@ nav li {
 
   .latest-news .bottom .author-date {
     font-size: 0.8rem;
+  }
+
+  .category-container {
+    flex-basis: 50%;
+  }
+
+  .category-highlight {
+    height: 30vw;
   }
 }
 
@@ -718,6 +831,19 @@ nav li {
 
   .latest-news .bottom .author-date {
     font-size: 0.7rem;
+  }
+
+  .category-container {
+    flex-basis: 100%;
+  }
+
+  .category-highlight {
+    height: 60vw;
+  }
+
+  .copyright span {
+    display: block;
+    line-height: 1.5em;
   }
 }
 
