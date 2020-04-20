@@ -82,6 +82,10 @@ header {
   display: none;
 }
 
+.category-container {
+  flex-basis: 33.3333%;
+}
+
 .pd-14,
 .latest-news article,
 .latest-deals article,
@@ -110,6 +114,10 @@ header {
 nav li {
   display: inline-block;
   margin-right: 1em;
+}
+
+.funding-information span {
+  margin-left: 0.2em;
 }
 
 .second-nav-container,
@@ -170,6 +178,23 @@ nav li {
   font-size: var(--first-nav-font-size);
   width: 100%;
   padding: 0.7em;
+}
+
+.funds-list li {
+  display: inline-block;
+  margin: 1em 0;
+}
+
+.list-categ-article li {
+  padding: 0.5em 0 0.5em 1em;
+  font-size: 0.9rem;
+  color: #575757;
+  border-bottom: 1px solid #eee;
+}
+
+.footer-menu li {
+  margin: 6px;
+  font-size: 0.8rem;
 }
 
 .dropdown-menu-items li:first-child {
@@ -333,6 +358,10 @@ nav li {
   margin-top: 0.3em;
 }
 
+.funding-container i {
+  color: black;
+}
+
 .latest-news .bottom i {
   font-size: 2px;
   vertical-align: middle;
@@ -494,22 +523,11 @@ nav li {
   color: #585858;
 }
 
-.funding-container i {
-  color: black;
-}
-
 .funding-information {
   padding: 1em;
   line-height: 2em;
-  font-size: 0.8rem;
-}
-
-.funding-information span {
-  margin-left: 0.2em;
-}
-
-.funding-information {
   border-bottom: 1px solid #ffccc3;
+  font-size: 0.8rem;
 }
 
 .funding-status {
@@ -517,7 +535,7 @@ nav li {
   font-size: 0.7rem;
 }
 
-.funding-status span:last-child{
+.funding-status span:last-child {
   color: var(--first-nav-color);
 }
 
@@ -537,11 +555,6 @@ nav li {
   color: var(--orange-title);
   align-self: flex-end;
   margin-bottom: 0.5em;
-}
-
-.funds-list li {
-  display: inline-block;
-  margin: 1em 0;
 }
 
 .funds-list :nth-child(1)::after,
@@ -591,17 +604,8 @@ nav li {
   right: 0;
 }
 
-.category-container {
-  flex-basis: 33.3333%;
-}
-
 .category-highlight {
-  background-image: linear-gradient(
-      to bottom,
-      rgba(199, 199, 199, 0.25),
-      rgba(0, 0, 0, 0.75)
-    ),
-    url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/04/Google-Meet-796x417.jpg);
+  background-image: linear-gradient(to bottom, rgba(199, 199, 199, 0.25), rgba(0, 0, 0, 0.75)), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/04/Google-Meet-796x417.jpg);
   background-position: center;
   background-size: cover;
   height: 20vw;
@@ -638,13 +642,6 @@ nav li {
   font-weight: bold;
 }
 
-.list-categ-article li {
-  padding: 0.5em 0 0.5em 1em;
-  font-size: 0.9rem;
-  color: #575757;
-  border-bottom: 1px solid #eee;
-}
-
 .list-categ-article li::before {
   content: "\2022";
   color: var(--orange-title);
@@ -675,11 +672,6 @@ footer div {
   font-family: var(--second-nav-font-family);
 }
 
-.footer-menu li {
-  margin: 6px;
-  font-size: 0.8rem;
-}
-
 .copyright {
   padding: 3em;
   background-color: black;
@@ -691,7 +683,7 @@ footer div {
   height: 9px;
 }
 
-.stack-footer-logo{
+.stack-footer-logo {
   width: 66px;
   height: 9px;
 }
