@@ -69,6 +69,15 @@ a {
   color: inherit;
 }
 
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: white;
+  z-index: 10;
+}
+
 .hide {
   display: none;
 }
@@ -186,6 +195,7 @@ nav li {
   flex-wrap: wrap;
   height: 70vh;
   color: white;
+  margin-top: 97px;
 }
 
 .hero h2 {
@@ -878,6 +888,7 @@ footer div {
   .hero {
     padding: 7px;
     height: auto;
+    margin-top: 76px;
   }
 
   .funds-list {
@@ -952,5 +963,8 @@ footer div {
 @media all and (max-width: 460px) {
   .header-popup-container{
     font-size: calc(0.80 * var(--first-nav-font-size));
+  }
+  .hero {
+    margin-top: 69px;
   }
 }
