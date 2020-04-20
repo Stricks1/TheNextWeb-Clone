@@ -658,8 +658,10 @@ footer div {
   }
 
   .header-logo{
-    display: block;
+    display: flex;
     height: 100%;
+    width: 100px;
+    background: linear-gradient(to bottom right,#c09,#f42 85%);
   }
 
   .hide-1080 {
@@ -729,6 +731,10 @@ footer div {
 
   .category-highlight {
     height: 30vw;
+  }
+
+  .magic-logo {
+    visibility: hidden;
   }
 }
 
