@@ -199,6 +199,23 @@ nav li {
   margin-left: auto;
 }
 
+.hero-logo {
+  display: inline-block;
+  height: 50%;
+  width: 50%;
+}
+
+.hero-logo img {
+  width: 100%;
+  height: auto;
+}
+
+
+.magic-logo {
+  align-items: flex-start;
+}
+
+
 .sub-article {
   padding: 3px 7px 0 0;
   flex-basis: 250px;
