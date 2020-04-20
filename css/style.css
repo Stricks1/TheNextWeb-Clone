@@ -9,7 +9,7 @@
   --first-nav-font-family: 'Noto Sans', sans-serif;
   --second-nav-bg-color: #888;
   --second-nav-font-size: 0.9rem;
-  --second-nav-font-family: 'Oswald', sans-serif;;
+  --second-nav-font-family: 'Oswald', sans-serif;
   --header-yellow: #fd3;
   --orange-title: #f42;
   --title-font-family: 'Saira', sans-serif;
@@ -150,7 +150,6 @@ nav li {
   grid-template-columns: 1fr;
 }
 
-
 .dropdown-menu {
   position: relative;
   display: inline-block;
@@ -177,7 +176,7 @@ nav li {
   border-bottom: 1px solid var(--second-nav-bg-color);
 }
 
-.dropdown-menu:hover .dropdown-menu-items{
+.dropdown-menu:hover .dropdown-menu-items {
   display: block;
 }
 
@@ -216,7 +215,7 @@ nav li {
   flex-basis: 587px;
   flex-grow: 1;
   height: auto;
-  background-image: linear-gradient(to bottom right,rgba(255, 0, 0, 0.35), rgba(0, 0, 0, 1)), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/04/Spirited-Away-796x415-796x415.jpg);
+  background-image: linear-gradient(to bottom right, rgba(255, 0, 0, 0.35), rgba(0, 0, 0, 1)), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/04/Spirited-Away-796x415-796x415.jpg);
   margin: 3px 7px 0 7px;
 }
 
@@ -250,7 +249,6 @@ nav li {
   height: auto;
 }
 
-
 .magic-logo {
   align-items: flex-start;
 }
@@ -280,7 +278,6 @@ nav li {
 
 .sub-article .two {
   background-image: linear-gradient(to bottom, rgba(199, 199, 199, 0.25), rgba(0, 0, 0, 0.75)), url(https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F04%2FFeatured-TNW-Photo.png&signature=e1dd1dd83d3fe638149bd423a574e6e8);
-
 }
 
 .sub-article .one,
@@ -295,15 +292,15 @@ nav li {
   height: 100%;
 }
 
-.hero .article-category{
-  padding-bottom: 0.5em;
-  letter-spacing: 0.1rem;
-}
-
-.article-category{
+.article-category {
   font-family: var(--second-nav-font-family);
   font-weight: 400;
   font-size: 0.8rem;
+}
+
+.hero .article-category {
+  padding-bottom: 0.5em;
+  letter-spacing: 0.1rem;
 }
 
 .latest-news-container,
@@ -373,8 +370,8 @@ nav li {
 }
 
 .latest-deals .deal-wrapper {
-  width: 0px;
-  height: 0px;
+  width: 0;
+  height: 0;
   border: 2.2em solid;
   position: absolute;
   top: 0;
@@ -389,15 +386,15 @@ nav li {
   position: absolute;
   top: 14%;
   right: 2%;
-  font-size: 0.60em;
+  font-size: 0.6em;
   font-weight: bold;
   transform: rotate(45deg);
 }
 
 .latest-deals .bundle-wrapper {
   position: absolute;
-  width: 0px;
-  height: 0px;
+  width: 0;
+  height: 0;
   border: 2.1em solid;
   border-bottom-color: #03cffc;
   border-top-color: transparent;
@@ -415,11 +412,10 @@ nav li {
   border-top-color: transparent;
   border-left-color: white;
   border-right-color: transparent;
-  bottom:0;
+  bottom: 0;
   left: 0;
   z-index: 1;
 }
-
 
 .latest-deals .bundle {
   color: white;
