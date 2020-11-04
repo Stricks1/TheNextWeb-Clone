@@ -22,15 +22,15 @@ This project consists of replicating the The Next Web website putting emphasis o
 
 👤 **Author1**
 
-- Github: [@githubhandle](https://github.com/misterpaul4)
-- Twitter: [@twitterhandle](https://twitter.com/paulajuze)
-- Linkedin: [linkedin](https://linkedin.com/in/chukwuebuka-paul-ajuizeogu/)
+- Github: [@misterpaul14](https://github.com/misterpaul4)
+- Twitter: [@paulajuze](https://twitter.com/paulajuze)
+- Linkedin: [Chukwuebuka Paul Ajuizeogu](https://linkedin.com/in/chukwuebuka-paul-ajuizeogu/)
 
 👤 **Author2**
 
-- Github: [@githubhandle](https://github.com/Stricks1)
-- Twitter: [@twitterhandle](https://twitter.com/gandhinomethor)
-- Linkedin: [linkedin](https://linkedin.com/in/gabriel-malheiros-silveira-b6632061/ )
+- Github: [@Stricks1](https://github.com/Stricks1)
+- Twitter: [@gandhinomethor](https://twitter.com/gandhinomethor)
+- Linkedin: [Gabriel Malheiros Silveira](https://linkedin.com/in/gabriel-malheiros-silveira-b6632061/ )
 
 ## 🤝 Contributing
 
@@ -44,9 +44,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+Special thanks to code reviewers.
 
 ## 📝 License
 
